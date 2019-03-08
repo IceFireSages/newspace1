@@ -1,0 +1,6 @@
+body{margin: 0;padding: 0;}
+.clearfloat:after{
+    content: '';
+    clear: both;
+}
+.clearfloat{z-index: 200;}
