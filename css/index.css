@@ -140,4 +140,17 @@ service down*/
     text-align: justify;
 }
 
-
+/*our-team*/
+.our-team-top{margin-top: 3rem;}
+.our-team-top h2::before{color: #fc7700;
+    content: "||";
+    left: -40px;
+    position: absolute;
+    top: 0;}
+.our-team-top h2::after{color: #fc7700;
+    content: "||";
+    right: -40px;
+    position: absolute;
+    top: 0;}
+.our-team-top h2{font-size: 1.2rem;}
+.our-team-top p{font-size: 0.87rem;color: #000000;}
