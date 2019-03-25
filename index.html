@@ -13,21 +13,13 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/index.css">
   <script src="./js/index_nav.js"></script>
+  <script src="./js/index.js"></script>
   <script>
 
     /* let result=arr.reduce((prev,elem,i,arr)=>{
          return prev+elem;
      },start);*/
-    var str = 'qweradfasdfewqaeg';
-    var ss = str.split("").reduce(function (prev, elem) {
-      if (prev[elem] === undefined) {
-        prev[elem] = 1;
-      } else {
-        prev[elem]++;
-      }
-      return prev;
-    }, 0);
-    console.log(ss);
+  
   </script>
 
 </head>
@@ -440,7 +432,7 @@
   </div>
   <!--portfolid-->
   <section id="portfolio" class="parallax-section ">
-    <div class="container">
+    <div class="container ">
       <div class="row text-center  ">
         <div class="col-sm-8  col-sm-offset-2 portfolio_top ">
           <h2 class="title-one">Portfolio</h2>
@@ -448,14 +440,14 @@
         </div>
       </div>
       <ul class="portfolio-filter text-center">
-        <li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".html">Html</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".wordpress">Wordpress</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".joomla">Joomla</a></li>
-        <li><a class="btn btn-default" href="#" data-filter=".megento">Megento</a></li>
+        <li><a class="btn btn-default active" href="javascript:" data-filter="*">All</a></li>
+        <li><a class="btn btn-default" href="javascript:" data-filter=".people">People</a></li>
+        <li><a class="btn btn-default" href="javascript:" data-filter=".wordpress">Wordpress</a></li>
+        <li><a class="btn btn-default" href="javascript:" data-filter=".joomla">Joomla</a></li>
+        <li><a class="btn btn-default" href="javascript:" data-filter=".megento">Megento</a></li>
       </ul>
       <div class="portfolio-items">
-        <div class="col-sm-3 col-xs-12 portfolio-item html">
+        <div class="col-sm-3 col-xs-12 portfolio-item people">
           <div class="view efffect">
             <div class="portfolio-image">
               <img src="image/portfolio/1.jpg" alt=""></div>
@@ -506,7 +498,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3 col-xs-12 portfolio-item html">
+        <div class="col-sm-3 col-xs-12 portfolio-item people">
           <div class="view efffect">
             <div class="portfolio-image">
               <img src="image/portfolio/5.jpg" alt="">
@@ -531,7 +523,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3 col-xs-12 portfolio-item html">
+        <div class="col-sm-3 col-xs-12 portfolio-item people">
           <div class="view efffect">
             <div class="portfolio-image">
               <img src="image/portfolio/7.jpg" alt="">
@@ -556,7 +548,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3 col-xs-12 portfolio-item html">
+        <div class="col-sm-3 col-xs-12 portfolio-item people">
           <div class="view efffect">
             <div class="portfolio-image">
               <img src="image/portfolio/9.jpg" alt="">

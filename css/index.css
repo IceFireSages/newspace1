@@ -292,3 +292,5 @@ service down*/
   background-color:#fc7700;
   color:#fff;
 }
+/*Portfolio*/
+.portfolio-items .portfolio-item{float: left}
