@@ -32,7 +32,7 @@ body{margin: 0;padding: 0;
 #myCarousel .carousel-item .slider-btn{background-color: #fc7700;width: 12rem;height: 3.4rem;line-height: 3.4rem; color: #ffffff;font-size: 1.1rem;}
 /*why with us*/
 .section-top {text-align: center;margin-top: 2rem;}
-.section-top h2{margin-bottom: 2rem;position: relative;}
+.section-top h2{margin-bottom: 2rem;position: relative;background: transparent}
 .title-one::before{color: #fc7700;
     content: "||";
     left: -40px;
@@ -63,7 +63,7 @@ body{margin: 0;padding: 0;
     margin-bottom: 1rem;
     text-transform: uppercase;}
 .about-us .lf-us-title{width:34.5rem;margin: 20px 0;  }
-.pull-left{margin: 0 25px 0 0;padding: 5px;}
+.about-us .pull-left{margin: 0 25px 0 0;padding: 5px;}
 .tab-content{background-color: #ffffff;}
 .rg-us ul li a:focus{
     border-top: 2px solid #fc7700!important;
@@ -136,9 +136,10 @@ service down*/
 }
 
 /*our-team*/
-#our-team{padding: 4.37rem auto 6.25rem auto;margin-bottom: 4.7rem;}
+.our-team_width{width: 100%;background-color: white}
+#our-team{padding: 4.37rem auto 6.25rem auto;}
 .our-team-top{margin-top: 3rem;}
-
+#our-team h2{color: #666666}
 
 .our-team-top p{font-size: 0.87rem;color: #000000;width:46.87rem}
 .carousel-control-prev,.carousel-control-next{
@@ -164,6 +165,7 @@ service down*/
 
 .single-member img{width: 100%;vertical-align: middle;}
 /*portfolio*/
+#portfolio{padding-top: 4rem}
 .portfolio_top{margin:0 auto 4rem;}
 #portfolio .portfolio-filter {
   margin-bottom:2.5rem;
@@ -294,5 +296,16 @@ service down*/
 }
 /*Portfolio*/
 .portfolio-items .portfolio-item{float: left}
-#portfolio{margin-bottom: 4rem}
+#portfolio{padding-bottom: 4rem;background-color: white;
+  }
+#portfolio h2{color: #666666;}
 /*clients*/
+#clients{padding-bottom: 5rem}
+#clients p{color: white;}
+#clients  .single-client{width: 42.7rem ;height: 9.3rem}
+#clients  .single-client .media img{width: 10.3rem ;height: 10.3rem}
+#clients  .single-client .media .media-body{width: 32.4rem;height: 10.3rem;display: block;background-color:#43484E;padding: 0.3rem ;font-size: 1rem;line-height: 1.25}
+#clients  .single-client .media .media-body small{display: block;
+  color: #999;}
+.clients .container{position: relative;top:6rem;}
+.clients .container .carousel-indicators{border-radius: 50%;position: absolute}
