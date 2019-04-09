@@ -21,5 +21,9 @@ $('document').ready(function () {
     $('div.portfolio-items>div.megento').siblings().fadeOut();
     $('div.portfolio-items>div.megento').css('display','block').fadeIn()
   });
+  $('.single-blog').css('hover',function () {
+    console.log('222222222222');
+    $('.single-blog>h2').css('color','#fff')
+  })
 })
 

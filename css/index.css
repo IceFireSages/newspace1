@@ -31,7 +31,7 @@ body{margin: 0;padding: 0;
 #myCarousel .carousel-item a{}
 #myCarousel .carousel-item .slider-btn{background-color: #fc7700;width: 12rem;height: 3.4rem;line-height: 3.4rem; color: #ffffff;font-size: 1.1rem;}
 /*why with us*/
-.section-top {text-align: center;margin-top: 2rem;}
+.section-top {text-align: center;margin-top: 2rem;margin-bottom: 2rem}
 .section-top h2{margin-bottom: 2rem;position: relative;background: transparent}
 .title-one::before{color: #fc7700;
     content: "||";
@@ -309,3 +309,27 @@ service down*/
   color: #999;}
 .clients .container{position: relative;top:6rem;}
 .clients .container .carousel-indicators{border-radius: 50%;position: absolute}
+#clients .container #usCarousel .carousel-indicators li{
+  width: 0.85rem;height: 0.85rem;border-radius: 50%;position: relative;top:4rem;
+}
+/*blog*/
+.blog{margin-top: 6.5rem}
+.blog .blog-item .single-blog{padding: 1.5rem;background-color: #F7F7F7;transition: all  800ms ease-in}
+.blog .blog-item  .single-blog:hover {
+  background-color: #43484E;
+  color: #fff;
+}
+
+.blog .blog-item img {width: 100%;margin: 1rem auto;vertical-align: middle}
+.blog .blog-item h2{ font-size: 1.5rem ;  color: #43484E;margin-bottom: 1rem}
+.blog .blog-item ul{list-style: none;}
+.blog .blog-item ul li{    border-right: 2px solid #999999;
+  float: left;
+  line-height: 10px;
+  list-style: none;
+  margin-right: 10px;
+
+  font-size: 12px;
+  color: #999;}
+.
+
