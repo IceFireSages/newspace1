@@ -12,8 +12,8 @@ body{margin: 0;padding: 0;
     border-radius: 0;
     border-bottom: 0;
     box-shadow: rgba(0, 0, 0, 0.298039) 0 0 3px;
-    padding-bottom: 8px;
-    margin-top: 5rem;
+    padding-bottom: 0.5rem;
+
     width: 100%;
 }
 .navbar-nav .active{background-color: #fc7700;}
@@ -26,6 +26,8 @@ body{margin: 0;padding: 0;
 #content ul>li{padding: 0 1px;}
 .d_fixed{position: fixed;z-index: 1000;}
 /*轮播图*/
+.bg-f6f6 .container{padding-right: 0px!important;
+  padding-left: 0px!important;}
 .carousel-caption{margin-bottom: 15rem;}
 #myCarousel .carousel-item{height: 40rem}
 #myCarousel .carousel-item a{}
@@ -331,5 +333,67 @@ service down*/
 
   font-size: 12px;
   color: #999;}
-.
 
+/*contact*/
+#contact {
+  position:relative;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  border-top: 2px solid #ddd;
+  padding: 5rem 0;
+
+}
+#contact .contact-heading {
+  padding-bottom: 35px;
+  position: relative;
+  z-index: 10;
+  padding-top: 5rem;}
+.pattern{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  background-image: url(../image/pattern.png);
+  background-repeat: repeat;
+  opacity: 0.2;
+}
+.contact-details {
+  padding-top: 5rem;
+}
+.contact-address p {
+  font-weight: 800;
+  font-size: 24px;
+}
+.address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.428571429;
+}
+.contact-address p span{
+color: #fc7700;;}
+
+.contact-address .social-icons a i {
+  border-radius: 0;
+  height: 30px;
+  line-height: inherit;
+  width: 30px;
+  border-width: 0;
+  transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  margin-right: 10px;
+}
+.contact-address {
+  background-color: #fff;
+  height: 390px;
+  padding-top: 85px;
+}
+/*right*/
+#contact-form-section{
+  background-color: #fff;
+  height: 390px;
+  padding-top: 85px;
+}
