@@ -186,8 +186,7 @@ service down*/
   -webkit-box-shadow: none;
   opacity: 1;
 }
-#portfolio
-.portfolio-filter li a {
+#portfolio .portfolio-filter li a {
   color: #686868;
   font-size: 16px;
   text-transform: uppercase;
@@ -323,9 +322,10 @@ service down*/
 }
 
 .blog .blog-item img {width: 100%;margin: 1rem auto;vertical-align: middle}
-.blog .blog-item h2{ font-size: 1.5rem ;  color: #43484E;margin-bottom: 1rem}
+.blog .blog-item h2{ font-size: 1.5rem ;  color: #43484E ;margin-bottom: 1rem}
 .blog .blog-item ul{list-style: none;}
-.blog .blog-item ul li{    border-right: 2px solid #999999;
+.blog .blog-item ul li{
+  border-right: 2px solid #999999;
   float: left;
   line-height: 10px;
   list-style: none;
@@ -341,24 +341,12 @@ service down*/
   background-color: #f6f6f6;
   border-top: 2px solid #ddd;
   padding: 5rem 0;
-
 }
 #contact .contact-heading {
   padding-bottom: 35px;
   position: relative;
-  z-index: 10;
   padding-top: 5rem;}
-.pattern{
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-  background-image: url(../image/pattern.png);
-  background-repeat: repeat;
-  opacity: 0.2;
-}
+
 .contact-details {
   padding-top: 5rem;
 }
@@ -372,28 +360,61 @@ service down*/
   line-height: 1.428571429;
 }
 .contact-address p span{
-color: #fc7700;;}
+color: #fc7700;}
 
-.contact-address .social-icons a i {
-  border-radius: 0;
-  height: 30px;
-  line-height: inherit;
-  width: 30px;
-  border-width: 0;
-  transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -webkit-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  margin-right: 10px;
-}
+
 .contact-address {
   background-color: #fff;
   height: 390px;
   padding-top: 85px;
 }
+.pattern{
+  border: 1px solid red;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  background-image: url(../image/pattern.png);
+  background-repeat: repeat;
+  opacity: 0.2;
+
+}
 /*right*/
 #contact-form-section{
   background-color: #fff;
   height: 390px;
-  padding-top: 85px;
+  padding-top: 35px;
+
 }
+#contact-form-section .form-control {
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-image: none;
+  background-color:white;
+  z-index: 10;
+  position: relative;
+}
+#contact-form-section .form-control:hover{
+  border: 1px solid #fc7000;
+}
+#contact-form{
+  margin: 0 20px;
+}
+
+
+#contact-form .form-group .name-field {
+  margin-right: 2%;
+  float: left;
+}
+#contact-form .name-field,.mail-field {
+  width: 49%;
+}
+.btn-primary{background-color: white;border: 1px solid #fc7000!important;color:black; }
+.btn-primary:hover{background-color: #fc7000!important;
+  color: #ffffff!important;
+;}
+.submit_btn:hover{background-color:red }
+.submit_btn{background-color: #fc7000}
