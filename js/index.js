@@ -2,7 +2,7 @@
 
 
 //portfolio
-$('document').ready(function () {
+/*$('document').ready(function () {
   $('a[data-filter="*"]').click(function () {
     $('div.portfolio-item').fadeIn()
   });
@@ -21,8 +21,32 @@ $('document').ready(function () {
     $('div.portfolio-items>div.megento').siblings().fadeOut();
     $('div.portfolio-items>div.megento').css('display','block').fadeIn()
   });
-  $('.single-blog').css('hover',function () {
-    $('.single-blog>h2').css('color','#fff');
-  })
-})
+  $('.single-blog').mouseover(function () {
+    $('.single-blog>h2').animate({color:"#fff"},800);
 
+  });
+
+});*/
+// portfolio filter
+$(window).load(function(){'use strict',
+  $portfolio_selectors = $('.portfolio-filter >li>a');
+  if($portfolio_selectors!='undefined'){
+    $portfolio = $('.portfolio-items');
+    $portfolio.isotope({
+      itemSelector : '.col-sm-3',
+      layoutMode : 'fitRows'
+    });
+
+    $portfolio_selectors.on('click', function(){
+      $portfolio_selectors.removeClass('active');
+      $(this).addClass('active');
+      var selector = $(this).attr('data-filter');
+      $portfolio.isotope({ filter: selector });
+      return false;
+    });
+  }
+});
+//Pretty Photo
+$("a[data-gallery^='prettyPhoto']").prettyPhoto({
+  social_tools: false
+});

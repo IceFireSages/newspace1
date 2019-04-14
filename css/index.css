@@ -190,7 +190,6 @@ service down*/
   color: #686868;
   font-size: 16px;
   text-transform: uppercase;
-  border: none;
   background: rgba(67, 72, 78, 0);
   opacity: .8;
   border: 1px solid rgba(252, 119, 0, 0);
@@ -320,7 +319,23 @@ service down*/
   background-color: #43484E;
   color: #fff;
 }
+.single-blog {transition: all 800ms ease-in;}
+.single-blog:hover.single-blog .btn-primary {
+  background-color:#fc7700;
+  color:#fff;
+  border-color:#fff;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+}
 
+.btn-primary{background-color: white;border: 1px solid #fc7000!important;color:black; }
+.hover{background-color: #fc7000!important;
+  color: #ffffff!important;}
+.btn-primary:hover{background-color: #fc7000!important;
+  color: #ffffff!important;
+}
 .blog .blog-item img {width: 100%;margin: 1rem auto;vertical-align: middle}
 .blog .blog-item h2{ font-size: 1.5rem ;  color: #43484E ;margin-bottom: 1rem}
 .blog .blog-item ul{list-style: none;}
@@ -412,9 +427,7 @@ color: #fc7700;}
 #contact-form .name-field,.mail-field {
   width: 49%;
 }
-.btn-primary{background-color: white;border: 1px solid #fc7000!important;color:black; }
-.btn-primary:hover{background-color: #fc7000!important;
-  color: #ffffff!important;
-;}
-.submit_btn:hover{background-color:red }
-.submit_btn{background-color: #fc7000}
+
+#nbbtn{position: relative;z-index:10; background-image: none;}
+
+#nbbtn:hover{background-color: #fc7000}
