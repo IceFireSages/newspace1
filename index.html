@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <!--引入文件-->
   <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <script src="./js/jquery.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
@@ -14,6 +15,7 @@
   <link rel="stylesheet" href="./css/index.css">
   <script src="./js/index_nav.js"></script>
   <script src="./js/index.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
 
 
 </head>
@@ -51,7 +53,7 @@
 </header>
 <section class="bg-f6f6  ">
   <!-- Carousel-->
-  <div class="container w-100 ">
+  <div class="flex-row w-100 ">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- 轮播（Carousel）指标 -->
       <ol class="carousel-indicators">
@@ -112,9 +114,9 @@
   <!--about us-->
   <div class="container">
     <div class="row  ">
-      <div class="col-sm-6 about-us">
+      <div class="col-md-6 about-us">
         <h2 class="lf-us-title">Why With Us?</h2>
-        <div class="rg-us ">
+        <div class="rg-us flex-row">
           <ul class="nav nav-tabs flex-nowrap col-md-12">
             <li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#about"><i
               class="fa fa-chain-broken"></i>Aout</a>
@@ -126,10 +128,10 @@
           </ul>
           <div class="tab-content p-3">
             <div id="about" class="tab-pane active ">
-              <div class="media">
-                <img class="pull-left media-object" src="./image/about-us/about.jpg"
+              <div class="media  row">
+                <img class="pull-left media-object col-md-6 col-sm-12" src="./image/about-us/about.jpg"
                      alt="about us">
-                <div class="media-body">
+                <div class="media-body col-md-6 col-sm-12 ">
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                     aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
@@ -139,10 +141,10 @@
               </div>
             </div>
             <div id="tab2" class="tab-pane">
-              <div class="media">
-                <img class="pull-left media-object" src="image/about-us/mission.jpg"
+              <div class="media row">
+                <img class="pull-left media-object ol-md-6 col-sm-12" src="image/about-us/mission.jpg"
                      alt="Mission">
-                <div class="media-body">
+                <div class="media-body ol-md-6 col-sm-12">
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                     aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
@@ -151,10 +153,10 @@
               </div>
             </div>
             <div id="tab3" class="tab-pane">
-              <div class="media">
-                <img class="pull-left media-object"
+              <div class="media row">
+                <img class="pull-left media-object ol-md-6 col-sm-12"
                      src="image/about-us/community.jpg" alt="Community">
-                <div class="media-body">
+                <div class="media-body ol-md-6 col-sm-12">
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                     aliquam erat volutpat. </p>
@@ -166,9 +168,9 @@
         </div>
       </div>
       <!--right-->
-      <div class="col-sm-6 about-us ">
+      <div class="col-md-6 about-us ">
         <h2 class="lf-us-title">OUR SKILLS</h2>
-        <div class="">
+        <div class="flex-row">
           <div class="progress skillbar">
             <div class="progress-bar progress-bar-striped progress-bar-animated  bg-info w-90 ">
               <span>HTML&CSS3</span></div>
@@ -220,7 +222,7 @@
           <div class="our-service">
             <div class="services row ">
               <div class="col-sm-4">
-                <div class="single-service">
+                <div class="single-service ">
                   <i class="fa fa-th"></i>
                   <h2>Modern Design</h2>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
@@ -432,7 +434,6 @@
           </div>
         </div>
         <ul class="portfolio-filter text-center">
-        
           <li><a class="btn btn-default active" href="javascript:" data-filter="*">All</a></li>
           <li><a class="btn btn-default" href="javascript:" data-filter=".people">People</a></li>
           <li><a class="btn btn-default" href="javascript:" data-filter=".wordpress">Wordpress</a></li>
