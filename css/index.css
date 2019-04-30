@@ -172,8 +172,13 @@ service down*/
 #our-team{padding: 4.37rem auto 6.25rem auto;}
 .our-team-top{margin-top: 3rem;}
 #our-team h2{color: #666666}
-
-.our-team-top p{font-size: 0.87rem;color: #000000;width:46.87rem}
+#our-team .team-members {
+  padding:0;
+  margin-top:55px;
+  display:block;
+  overflow:hidden
+}
+.our-team-top p{font-size: 0.87rem;color: #000000;width:100%}
 .carousel-control-prev,.carousel-control-next{
   width: 3%;
   height: 14%;
@@ -182,20 +187,74 @@ service down*/
   top: 48%;
   z-index: 100;
 }
-.single-member{
-  height: 430px;
-  background-color: #43484E;
+.single-member {
+  height:430px;
+  background-color:#43484E;
   border: 1px solid #43484E;
   color: #f6f6f6;
   padding: 25px;
-  text-align: center;
-  overflow: hidden;
+  text-align:center;
+  overflow:hidden;
 }
 .single-member p{font-size: 0.9rem; line-height: 1.1}
+.single-member h4,h5{text-align: center}
 .single-member h4{font-size: 1.13rem;margin: 0.625rem auto;}
 .single-member h5{font-size: 0.96rem;margin: 0.625rem auto;}
-
+#our-team .socials i {
+  background-color:#fff;
+  border-radius: 50%;
+  color: #43484E;
+  display: inline-block;
+  font-size:16px;
+  height: 30px;
+  line-height:28px;
+  margin-right: 5px;
+  text-align: center;
+  width: 30px;
+  border-width:1px;
+  border-color:#43484E;
+  border-style: solid;
+  opacity:.5;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#our-team .socials a i:hover {
+  opacity:1;
+  color:#fff;
+  border:0
+}
 .single-member img{width: 100%;vertical-align: middle;}
+#our-team .socials a .fa-facebook:hover {
+  background: #3B5997;
+}
+
+#our-team .socials a .fa-twitter:hover {
+  background:#29C5F6
+}
+
+#our-team .socials a .fa-pinterest:hover {
+  background:#C61118
+}
+
+#our-team .socials a .fa-dribbble:hover {
+  background:#FF5C93
+}
+
+#our-team .socials a .fa-linkedin:hover {
+  background:#006DC0
+}
+
+#our-team .socials a .fa-google-plus:hover {
+  background:#D13D2F
+}
+
+#our-team .socials a .fa-flickr:hover {
+  background:#7A797B
+}
+
+
 /*portfolio*/
 #portfolio{padding-top: 4rem}
 .portfolio_top{margin:0 auto 4rem;}
