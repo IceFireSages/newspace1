@@ -4,10 +4,13 @@
 
 
 $('document').ready(function () {
-  $('.single-service').focus(function () {
-    console.log('ddddddddd');
-    $('.single-service>i').css('backgroundColor','red')
-  });
+
+   $('.navbar-nav li').on("click",function () {
+     $(this).addClass('active').siblings().removeClass('active')
+     console.log('ww');
+   })
+
+
 
   //portfolio
   $portfolio_selectors = $('.portfolio-filter >li>a');
